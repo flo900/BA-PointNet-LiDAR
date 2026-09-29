@@ -8,6 +8,10 @@ module load lsfm-init-miniconda/1.0.0
 
 conda activate ba_pointnet
 
+gitpush() {
+    env -u LD_LIBRARY_PATH git push "$@"
+}
+
 echo "BA environment ready"
 echo "Python: $(which python)"
 python --version
