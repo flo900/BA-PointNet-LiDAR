@@ -1,0 +1,38 @@
+project:
+  name: waedenswil
+  crs: EPSG:2056
+
+aoi:
+  xmin: 2691000
+  xmax: 2693000
+  ymin: 1231000
+  ymax: 1233000
+
+lidar:
+  directory: /cfs/earth/scratch/troxlflo/BA/data/raw/lidar
+  files:
+    - swisssurface3d_2024_2691-1231_2056_5728.copc.laz
+    - swisssurface3d_2024_2692-1231_2056_5728.copc.laz
+    - swisssurface3d_2024_2691-1232_2056_5728.copc.laz
+    - swisssurface3d_2024_2692-1232_2056_5728.copc.laz
+
+av:
+  path: /cfs/earth/scratch/troxlflo/BA/data/intermediate/target.gpkg
+  layer: target
+
+tree_canopy:
+  path: /cfs/earth/scratch/troxlflo/BA/data/raw/tree_canopy/Waedi_Veg.gdb
+  layer: Baumkronen
+
+tiling:
+  tile_size_m: 25
+  points_per_tile: 16384
+  seed: 42
+
+ground_height:
+  k_neighbors: 8
+  buffer_m: 25
+
+output:
+  intermediate: /cfs/earth/scratch/troxlflo/BA/data/intermediate/waedenswil_water_nan_test
+  processed: /cfs/earth/scratch/troxlflo/BA/data/processed/waedenswil_pointnet
