@@ -1,0 +1,13 @@
+FINAL TEST EVALUATION: FIVE-CLASS BASELINE
+Checkpoint epoch: 43
+Test tiles: 896
+Overall Accuracy: 92.2860%
+Macro F1: 0.935180
+Weighted F1: 0.923398
+Mean IoU: 88.1385%
+water: Precision=0.9965 Recall=0.9847 F1=0.9906 IoU=98.13%
+tree_canopy: Precision=0.8419 Recall=0.9606 F1=0.8973 IoU=81.38%
+low_vegetation: Precision=0.9560 Recall=0.9092 F1=0.9320 IoU=87.27%
+impervious: Precision=0.8819 Recall=0.8760 F1=0.8790 IoU=78.41%
+buildings: Precision=0.9841 Recall=0.9701 F1=0.9770 IoU=95.51%
+All sampled entries, including repetitions, against existing generated reference labels.

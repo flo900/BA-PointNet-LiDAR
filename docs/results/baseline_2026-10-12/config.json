@@ -1,0 +1,206 @@
+{
+  "config": {
+    "data_dir": "/cfs/earth/scratch/troxlflo/BA/data/processed/waedenswil_pointnet_split_B_v1",
+    "epochs": 50,
+    "batch_size": 24,
+    "num_workers": 2,
+    "patience": 10,
+    "seed": 42,
+    "lr": 0.001,
+    "weight_decay": 5e-05,
+    "dropout": 0.6,
+    "class_weights": [
+      2.0,
+      0.6,
+      0.2,
+      0.4,
+      0.45
+    ],
+    "loss": "focal(gamma=2) + 0.2 * dice",
+    "augmentation": {
+      "rotation": 180,
+      "jitter_sigma": 0.02,
+      "jitter_clip": 0.05,
+      "scale": [
+        0.8,
+        1.2
+      ]
+    }
+  },
+  "metadata": {
+    "points_per_tile": 16384,
+    "num_features": 7,
+    "num_classes": 5,
+    "features": [
+      "x_local_m",
+      "y_local_m",
+      "height_agl_m",
+      "intensity",
+      "return_num",
+      "num_returns",
+      "scan_angle"
+    ],
+    "classes": {
+      "0": "water",
+      "1": "tree_canopy",
+      "2": "low_vegetation",
+      "3": "impervious",
+      "4": "buildings"
+    },
+    "tile_size_m": 25,
+    "complete": true,
+    "available_splits": [
+      "train",
+      "val",
+      "test"
+    ],
+    "split_sizes": {
+      "train": 4302,
+      "val": 912,
+      "test": 896
+    },
+    "class_counts": {
+      "train": [
+        1505499,
+        7667301,
+        46481515,
+        8265037,
+        6564616
+      ],
+      "val": [
+        378729,
+        1646908,
+        9567989,
+        1649461,
+        1699121
+      ],
+      "test": [
+        305927,
+        3150579,
+        8440816,
+        1634865,
+        1147877
+      ]
+    },
+    "target_ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "split_method": "fixed_variant_B_rectangles_on_100m_grid",
+    "spatial_split": {
+      "variant": "B",
+      "rectangles_xyxy": {
+        "val": [
+          2691100,
+          2693000,
+          1232100,
+          1232400
+        ],
+        "test": [
+          2691200,
+          2692600,
+          1232400,
+          1232800
+        ]
+      },
+      "rectangle_order": "xmin, xmax, ymin, ymax",
+      "inclusion": "lower inclusive, upper exclusive",
+      "training": "all remaining valid tiles",
+      "fractions": [
+        0.7040916530278233,
+        0.14926350245499181,
+        0.14664484451718493
+      ]
+    },
+    "buffer_m": 0,
+    "crs": "EPSG:2056",
+    "source_dir": "/cfs/earth/scratch/troxlflo/BA/data/processed/waedenswil_pointnet_v1",
+    "source_metadata": {
+      "points_per_tile": 16384,
+      "num_features": 7,
+      "num_classes": 5,
+      "features": [
+        "x_local_m",
+        "y_local_m",
+        "height_agl_m",
+        "intensity",
+        "return_num",
+        "num_returns",
+        "scan_angle"
+      ],
+      "classes": {
+        "0": "water",
+        "1": "tree_canopy",
+        "2": "low_vegetation",
+        "3": "impervious",
+        "4": "buildings"
+      },
+      "tile_size_m": 25,
+      "split_sizes": {
+        "train": 6110
+      },
+      "available_splits": [
+        "train"
+      ],
+      "pending_splits": [
+        "val",
+        "test"
+      ],
+      "complete": true,
+      "height_policy": "exclude_tiles_with_missing_height",
+      "excluded_tiles": 128,
+      "train_class_counts": [
+        2190155,
+        12464788,
+        64490320,
+        11549363,
+        9411614
+      ],
+      "source_sample_dir": "/cfs/earth/scratch/troxlflo/BA/data/intermediate/waedenswil_sampled_25m_v1",
+      "source_inventory": "/cfs/earth/scratch/troxlflo/BA/data/qa/tiles_25m_sampled_inventory.csv",
+      "sampling_metadata": {
+        "stage": "sampled_intermediate",
+        "complete": true,
+        "ready_for_training": false,
+        "split": null,
+        "missing_height_policy": "preserve_nan",
+        "source_root": "/cfs/earth/scratch/troxlflo/BA/data/intermediate/waedenswil_full",
+        "inventory_csv": "/cfs/earth/scratch/troxlflo/BA/data/qa/tiles_25m_sampled_inventory.csv",
+        "features": [
+          "x_local_m",
+          "y_local_m",
+          "height_agl_m",
+          "intensity",
+          "return_num",
+          "num_returns",
+          "scan_angle"
+        ],
+        "class_names": [
+          "water",
+          "tree_canopy",
+          "low_vegetation",
+          "impervious",
+          "buildings"
+        ],
+        "tile_size_m": 25,
+        "points_per_tile": 16384,
+        "min_points": 4000,
+        "seed": 42,
+        "numpy_version": "2.0.2",
+        "tiles": 6238,
+        "sampled_points": 102203392,
+        "sampled_missing_height": 2097152,
+        "source_indices_meaning": "Zero-based row indices in original chunk NPZ"
+      }
+    },
+    "height_policy": "exclude_tiles_with_missing_height"
+  },
+  "git_commit": "f3a19d4ce426f959c27fff8d05e42b6d7f6fc1a3",
+  "git_status": "?? --config\n?? scripts/export_pointnet_qgis.py\n?? scripts/export_pointnet_qgis_job.sh\n?? scripts/train_pointnet.py\n?? scripts/train_pointnet_job.sh\n",
+  "torch": "1.12.1+cu116",
+  "cuda": "11.6",
+  "gpu": "NVIDIA A100-PCIE-40GB",
+  "test_data_used": false,
+  "metric_note": "Sampled entries include repeated points; macro metrics average five classes."
+}
