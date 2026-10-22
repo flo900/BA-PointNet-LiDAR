@@ -1,0 +1,6 @@
+reference / prediction,water,tree_canopy,low_vegetation,impervious,buildings
+water,300876,325,3994,732,0
+tree_canopy,8,3023431,123169,476,3495
+low_vegetation,170,556082,7645833,222664,16067
+impervious,170,139,169023,1463855,1678
+buildings,19,3471,26703,2315,1115369

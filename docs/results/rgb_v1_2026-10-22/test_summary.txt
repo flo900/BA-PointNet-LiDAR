@@ -1,0 +1,14 @@
+TEST EVALUATION: FIVE-CLASS RGB V1
+Checkpoint epoch: 48
+Test tiles: 896
+Overall Accuracy: 92.2977%
+Macro F1: 0.935584
+Weighted F1: 0.923600
+Mean IoU: 88.2033%
+water: Precision=0.9988 Recall=0.9835 F1=0.9911 IoU=98.23%
+tree_canopy: Precision=0.8437 Recall=0.9596 F1=0.8980 IoU=81.48%
+low_vegetation: Precision=0.9595 Recall=0.9058 F1=0.9319 IoU=87.24%
+impervious: Precision=0.8662 Recall=0.8954 F1=0.8805 IoU=78.66%
+buildings: Precision=0.9813 Recall=0.9717 F1=0.9765 IoU=95.40%
+All sampled entries, including repetitions, against existing generated reference labels.
+Same spatial test split as the previously evaluated seven-feature baseline; not a new independent test region.
