@@ -1,0 +1,361 @@
+{
+  "classes": [
+    "water",
+    "tree_canopy",
+    "low_vegetation",
+    "impervious",
+    "buildings"
+  ],
+  "confusion_matrix_order": "rows=reference, columns=prediction",
+  "note": "Per-area reference agreement, sampled repetitions included; training and validation kept separate.",
+  "areas": [
+    {
+      "area_id": "garten_01",
+      "split": "val",
+      "array_index": 490,
+      "seen_in_training": 0,
+      "sampled_entries": 16384,
+      "baseline": {
+        "reference_agreement": 0.9483642578125,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            329,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            14591,
+            207,
+            97
+          ],
+          [
+            0,
+            0,
+            29,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            184,
+            0,
+            947
+          ]
+        ]
+      },
+      "rgb": {
+        "reference_agreement": 0.94024658203125,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            329,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            14363,
+            436,
+            96
+          ],
+          [
+            0,
+            0,
+            29,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            89,
+            0,
+            1042
+          ]
+        ]
+      }
+    },
+    {
+      "area_id": "garten_02",
+      "split": "train",
+      "array_index": 3972,
+      "seen_in_training": 1,
+      "sampled_entries": 16384,
+      "baseline": {
+        "reference_agreement": 0.9329833984375,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            6955,
+            930,
+            28
+          ],
+          [
+            0,
+            0,
+            66,
+            3065,
+            0
+          ],
+          [
+            0,
+            0,
+            69,
+            5,
+            5266
+          ]
+        ]
+      },
+      "rgb": {
+        "reference_agreement": 0.91107177734375,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            6565,
+            1316,
+            32
+          ],
+          [
+            0,
+            0,
+            20,
+            3109,
+            2
+          ],
+          [
+            0,
+            0,
+            78,
+            9,
+            5253
+          ]
+        ]
+      }
+    },
+    {
+      "area_id": "garten_03",
+      "split": "train",
+      "array_index": 2836,
+      "seen_in_training": 1,
+      "sampled_entries": 16384,
+      "baseline": {
+        "reference_agreement": 0.87994384765625,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6767,
+            189,
+            0,
+            1
+          ],
+          [
+            1,
+            1535,
+            7366,
+            52,
+            1
+          ],
+          [
+            0,
+            0,
+            16,
+            233,
+            0
+          ],
+          [
+            0,
+            35,
+            137,
+            0,
+            51
+          ]
+        ]
+      },
+      "rgb": {
+        "reference_agreement": 0.9127197265625,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            6673,
+            283,
+            0,
+            1
+          ],
+          [
+            0,
+            925,
+            7990,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            19,
+            230,
+            0
+          ],
+          [
+            0,
+            12,
+            150,
+            0,
+            61
+          ]
+        ]
+      }
+    },
+    {
+      "area_id": "garten_04",
+      "split": "train",
+      "array_index": 2854,
+      "seen_in_training": 1,
+      "sampled_entries": 16384,
+      "baseline": {
+        "reference_agreement": 0.9442138671875,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            15
+          ],
+          [
+            0,
+            0,
+            8864,
+            530,
+            78
+          ],
+          [
+            0,
+            0,
+            186,
+            260,
+            0
+          ],
+          [
+            0,
+            0,
+            96,
+            7,
+            6346
+          ]
+        ]
+      },
+      "rgb": {
+        "reference_agreement": 0.92950439453125,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            15
+          ],
+          [
+            0,
+            0,
+            8704,
+            686,
+            82
+          ],
+          [
+            0,
+            0,
+            255,
+            190,
+            1
+          ],
+          [
+            0,
+            0,
+            111,
+            3,
+            6335
+          ]
+        ]
+      }
+    }
+  ]
+}

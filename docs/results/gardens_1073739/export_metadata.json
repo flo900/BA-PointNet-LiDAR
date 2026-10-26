@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "splits": [
+    "val",
+    "train"
+  ],
+  "crs": "EPSG:2056",
+  "areas": [
+    {
+      "area_id": "garten_01",
+      "split": "val",
+      "array_index": 490,
+      "xmin": 2692350,
+      "ymin": 1232150
+    },
+    {
+      "area_id": "garten_02",
+      "split": "train",
+      "array_index": 3972,
+      "xmin": 2692700,
+      "ymin": 1232025
+    },
+    {
+      "area_id": "garten_03",
+      "split": "train",
+      "array_index": 2836,
+      "xmin": 2692700,
+      "ymin": 1231725
+    },
+    {
+      "area_id": "garten_04",
+      "split": "train",
+      "array_index": 2854,
+      "xmin": 2692850,
+      "ymin": 1231725
+    }
+  ],
+  "baseline_checkpoint": "/cfs/earth/scratch/troxlflo/BA/runs/train_split_B_b24_1065610/best_checkpoint.pth",
+  "baseline_checkpoint_sha256": "831579b950798ddb726f81eec63ec9f1e134cda3dca52b6efdb0157435c0ff8f",
+  "baseline_epoch": 43,
+  "rgb_checkpoint": "/cfs/earth/scratch/troxlflo/BA/runs/train_split_B_rgb_v1_1073682/best_checkpoint.pth",
+  "rgb_checkpoint_sha256": "2844e1bbd746703a8a33aab6e099960468573ef75e69d982adb0f30595da10c4",
+  "rgb_epoch": 48,
+  "points": 65536,
+  "comparison_counts": {
+    "both_match_reference": 59569,
+    "rgb_only_matches_reference": 946,
+    "baseline_only_matches_reference": 1142,
+    "both_differ_reference": 3879
+  },
+  "test_data_used": false,
+  "repeated_entries_included": true,
+  "selection_note": "Four user-selected garden tiles: one validation tile and three training tiles. Training tiles were seen during training. Qualitative diagnosis, not independent test accuracy.",
+  "reference_note": "Correct means agreement with generated reference labels, not independently established ground truth."
+}
